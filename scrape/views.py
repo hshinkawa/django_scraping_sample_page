@@ -51,7 +51,7 @@ def survey(params):
     with_whoms = []
     dates = []
     while True:
-        time.sleep(1)
+        time.sleep(3)
         bs = BS(urlopen(url.format(i)), 'html.parser')
         if i == 1:
             tour_name = bs.find('h2',{'id':'activityname'}).get_text()
