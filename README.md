@@ -1,4 +1,4 @@
-#django_scraping_sample_page
+# django_scraping_sample_page
 
 Python Djangoを用いたスクレイピングアプリ
  
