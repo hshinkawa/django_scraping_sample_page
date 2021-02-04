@@ -12,8 +12,6 @@ Python Djangoを用いたスクレイピングアプリ
  
 # Requirement
  
-"hoge"を動かすのに必要なライブラリなどを列挙する
- 
 * asgiref==3.3.0
 * beautifulsoup4==4.9.3
 * bs4==0.0.1
