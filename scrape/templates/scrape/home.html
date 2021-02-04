@@ -1,0 +1,13 @@
+{% extends 'scrape/base.html' %}
+
+{% block content1 %}
+<div class="container">
+<form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="取得する">
+        <p><br>※数分かかることがあります．処理が終わると自動でページが遷移します．</p>
+    </form>
+</div>
+
+{% endblock content1 %}

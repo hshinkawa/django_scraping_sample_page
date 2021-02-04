@@ -1,0 +1,34 @@
+{% extends 'scrape/base.html' %}
+{% block content1 %}
+
+<div class="container">
+<h3>ダウンロードはこちらから→<a href="{% url 'download' survey_id=tour.pk %}" class="btn btn-outline-info btn-sm">csvダウンロード</a></h3>
+<h3>※<a href="#">Home</a>に過去データもあります</h3>
+<ul class="list-group list-group-flush">
+ <table border="2">
+   <tr>
+     <th>タイトル</th>
+     <th>投稿者</th>
+     <th>投稿日</th>
+     <th>投稿内容</th>
+     <th>評価</th>
+     <th>利用形態</th>
+     <th>参加日（☆）</th>
+   </tr>
+   {% if reviews %}
+   {% for i in reviews %}
+   <tr>
+     <td>{{ i.title }}</td>
+     <td>{{ i.author }}</td>
+     <td>{{ i.date_posted }}</a></td>
+     <td>{{ i.content }}</td>
+     <td>{{ i.star }}</td>
+     <td>{{ i.type }}</td>
+     <td>{{ i.tour_date }}</td>
+   </tr>
+   {% endfor %}
+   {% endif %}
+ </table>
+</ul>
+</div>
+{% endblock content1 %}

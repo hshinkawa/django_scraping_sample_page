@@ -1,0 +1,23 @@
+{% extends "scrape/base.html" %}
+{% load crispy_forms_tags %}
+{% block content1 %}
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">
+                    ユーザー登録
+                </legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">サインアップ</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                すでにアカウントを持っている方は <a class="ml-2" href="{% url 'login' %}">ログイン</a>
+            </small>
+        </div>
+    </div>
+{% endblock content1 %}
