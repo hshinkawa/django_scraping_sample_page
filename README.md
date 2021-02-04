@@ -3,6 +3,12 @@
 Python Djangoを用いたスクレイピングアプリ
  
 特定の旅行サイトのツアーURLと取得したい☆の数を指定すると，該当するレビューを全てリスト化します．
+
+# Demo
+
+サンプル画像
+
+![](https://user-images.githubusercontent.com/49260323/106838647-0d7dfc80-66e0-11eb-9a18-f4e15aab6cc3.png)
  
 # Features
  
