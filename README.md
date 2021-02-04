@@ -6,9 +6,10 @@ Python Djangoを用いたスクレイピングアプリ
 
 # Demo
 
-サンプル画像
-
 ![](https://user-images.githubusercontent.com/49260323/106838647-0d7dfc80-66e0-11eb-9a18-f4e15aab6cc3.png)
+![](https://user-images.githubusercontent.com/49260323/106838814-5635b580-66e0-11eb-9fcb-1e20bb880d9d.png)
+![](https://user-images.githubusercontent.com/49260323/106838820-58980f80-66e0-11eb-953c-31a35f0d5857.png)
+![](https://user-images.githubusercontent.com/49260323/106838824-5a61d300-66e0-11eb-9dd7-02eb8b29c8bd.png)
  
 # Features
  
@@ -52,4 +53,4 @@ python manage.py runserver
  
 # Note
 
-スクレイピング先のサーバに負荷がかからない範囲でご利用ください．
+スクレイピング先のサーバに負荷がかからない範囲，またrobots.txtのルールの範囲内でご利用ください．
